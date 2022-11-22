@@ -1,0 +1,107 @@
+:root {
+    --dark: rgb(7, 7, 64);
+    --light: whitesmoke;
+    --secondary: rgb(195, 169, 108);
+    --tertiary: salmon;
+}
+
+body {
+    font-size: 16px;
+    background-color: var(--dark);
+    color: var(--light);
+    display: grid;
+}
+
+.headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+}
+
+.headline h1 {
+    font-size: 40px;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    width: 100%;
+}
+
+section {
+    width: 33.3%;
+    border: var(--secondary);
+    padding: 8px;
+    margin: -20px;
+}
+
+section h2 {
+    text-align: center;
+    padding: 8px;
+    background-color: var(--dark);
+    margin-bottom: 8px;
+}
+
+section code {
+    background-color: var(--dark);
+}
+
+section pre {
+    background-color: var(--dark);
+    padding: 8px;
+    margin-top: 8px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+footer h2 {
+    font-size: 32px;
+}
+
+.card {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 10px;
+    flex: 0 0 300px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    margin: 20px;
+  }
+
+.code-card .code-header {
+    border-radius: 8px;
+    transition: all 0.5 ease-in-out;
+    background-image: linear-gradient (
+        rgba (232, 102, 236, 0.3) 0%,
+        rgba (232, 102, 236, 0.6) 100%);
+}
+
+code-card:hover, code-card:hover .card-header {
+    box-shadow: inset 0px 0px 8px rgba (232, 102, 236, 1),
+    0 0 15px rgba(232, 102, 236, 1);
+}
+
+.card-header {
+    position: relative;
+    margin-top: -20px;
+}
+
+@media screen and (max-width: 1160px) {
+    article {
+        width: calc(50% - 32px)
+    } 
+}
+
+@media screen and (max-width: 736px) {
+    article {
+        width: calc(100% - 32px);
+    }
+    
+}
